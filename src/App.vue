@@ -8,6 +8,17 @@
   </div>
 </template>
 
+<script>
+  export default {
+      mounted: function() {
+          let persistedState = window.localStorage.getItem("state");
+          if(persistedState) {
+              this.$store.commit('loadState', JSON.parse(persistedState));
+          }
+      }
+  }
+</script>
+
 <style lang="scss">
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;

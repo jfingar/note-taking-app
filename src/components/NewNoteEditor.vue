@@ -24,7 +24,7 @@
                     return this.$store.state.newNoteText;
                 },
                 set(value) {
-                    this.$store.commit('updateNewNoteText', value);
+                    this.$store.dispatch('updateNewNoteText', value);
                 }
             }
         },
@@ -35,7 +35,7 @@
                 }
             },
             clearNewNoteText() {
-                this.$store.commit('updateNewNoteText', '');
+                this.$store.dispatch('updateNewNoteText', '');
             }
         }
     }
