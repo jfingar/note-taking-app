@@ -1,4 +1,6 @@
-# note-taking-app
+# Take Notes! (Vue.js code sample)
+
+Simple note taking application that demonstrates several key features of vue.js
 
 ## Project setup
 ```
